@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Figtree';
+    src: local('Figtree Medium'), local('Figtree-Medium'),
+        url('../fonts/Figtree-Medium.woff2') format('woff2'),
+        url('../fonts/Figtree-Medium.woff') format('woff'),
+        url('../fonts/Figtree-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: local('../fonts/Figtree ExtraBold'), local('Figtree-ExtraBold'),
+        url('../fonts/Figtree-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Figtree-ExtraBold.woff') format('woff'),
+        url('../fonts/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Figtree", serif;
+    background-color: #F4D04E;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+p,
+h1,
+h2 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 24px;
+}
+
+.blog-card {
+    padding: 24px;
+    max-width: 384px;
+    border: 1px solid #111111;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 8px 8px 0 0 #111111;
+    text-align: left;
+}
+
+.blog-card__image {
+    height: 200px;
+    background-color: #F4D04E;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blog-card__content {
+    margin: 24px 0;
+}
+
+.blog-card__tag {
+    padding: 5px 12px;
+    margin-bottom: 12px;
+
+    width: max-content;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #F4D04E;
+    text-align: center;
+}
+
+.blog-card__date {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.blog-card__link:hover {
+    color: #F4D04E;
+    transition: color 0.3s ease;
+}
+
+.blog-card__title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.blog-card__description {
+    color: #6B6B6B;
+}
+
+.blog-card__author {
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.blog-card__author img {
+    margin-right: 12px;
+
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+
+    .blog-card__tag,
+    .blog-card__date {
+        font-size: 12px;
+    }
+
+    .blog-card__title {
+        font-size: 20px;
+    }
+}
